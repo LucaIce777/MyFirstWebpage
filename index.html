@@ -4,82 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="/images/logo luca.png"> <!-- Add this line for favicon -->
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0; 
+            margin: 0;
+            font-family: cursive;
+        }
+        .header-container {
+            background: linear-gradient(135deg, #d00000, #8b0000); 
+            padding: 20px;
+            border-radius: 0; 
+            color: blanchedalmond;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 100%; 
+            position: relative; 
+            left: 0; 
+        }
+        .header-content {
+            max-width: 800px; 
+            margin: 0 auto; 
+            display: flex; 
+            align-items: center; 
+        }
+        .header-container img {
+            width: 120px; 
+            height: auto;
+            margin-right: 20px; 
+        }
+        h1 {
+            margin: 0; 
+            font-size: 2em; 
+        }
+        h2 {
+            margin: 10px 0;
+            width: 90%;
+            margin: 0 auto; 
+        }
+        p, ul {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        table {
+            width: 90%; /* Wider table */
+            margin: 20px auto; /* Center the table */
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white; /* Background for the form */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Align text to the left */
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: red; /* Red submit button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred; /* This means what will happen when you try clicking on it */
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My First Webpage</h1>
+    <div class="header-container">
+        <div class="header-content">
+            <!-- Logo Image -->
+            <img src="/images/logo luca.png" alt="My Website Logo" class="Luca Logo">
+            <!-- Heading -->
+            <h1>Welcome to My First Webpage</h1>
+        </div>
+    </div>
 
-    <!-- Image -->
-    <img src="https://via.placeholder.com/400" alt="Sample Image of a Hobby" width="400" height="300">
+    <!-- Rest of your content... -->
+    <img src="/images/HOMEPAGE.jpg" alt="My  homepage" width="500" height="400">
 
-    <!-- Paragraph -->
     <p>
         Hi! My name is Luca. I enjoy reading, gaming, and programming in my free time. Web development has been 
         a recent hobby that I'm growing more and more passionate about. Check out my favorite website below!
     </p>
 
-    <!-- Link -->
-    <a href="https://github.com" target="_blank">Visit GitHub</a>
+    <a href="https://timbram.blogspot.com" target="_blank">My Blog</a>
 
-    <!-- Unordered List -->
     <h2>My Favorite Hobbies</h2>
     <ul>
-        <li>Reading</li>
+        <li>Talking</li>
         <li>Gaming</li>
         <li>Programming</li>
     </ul>
 
-    <!-- Table -->
     <h2>Some Fun Facts</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Favorite Food</th>
             <th>Favorite Place</th>
             <th>Favorite Book</th>
         </tr>
         <tr>
-            <td>Pizza</td>
-            <td>Tokyo</td>
-            <td>The Hobbit</td>
+            <td>Oaths and Bread</td>
+            <td>Heaven</td>
+            <td>Comics and Manga</td>
         </tr>
         <tr>
-            <td>Sushi</td>
+            <td>Rice and Chicken with Turkey </td>
             <td>New York</td>
             <td>1984</td>
         </tr>
         <tr>
-            <td>Ice Cream</td>
-            <td>Paris</td>
-            <td>The Catcher in the Rye</td>
+            <td>Beans and Pap</td>
+            <td>Port Harcourt</td>
+            <td>Goals</td>
         </tr>
     </table>
 
-    <!-- Form -->
     <h2>Contact Me</h2>
     <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="number" id="phone" name="phone"><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" name="phone">
 
-        <label><input type="checkbox" id="terms" name="terms"> I agree to the terms</label><br><br>
+        <label><input type="checkbox" id="terms" name="terms"> I agree to the terms</label><br>
 
         <label>Gender:</label><br>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+        <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
+        <label for="female">Female</label><br>
 
-        <label for="comments">Additional Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
 
         <input type="submit" value="Submit">
     </form>
